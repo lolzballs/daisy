@@ -29,11 +29,13 @@ class car:
             v_max = np.sqrt(radius * self.handling / 1000000)
 
         if pit_stop:
+            if self.cur_v != 0:
+                return False
+
             self.time += 30
             self.cur_v = 0
             self.cur_gas = self.gas
             self.cur_tire = self.tire
-            return False
 
         if inst[0] == 0:
             self.time += 1 / self.cur_v
