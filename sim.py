@@ -37,4 +37,4 @@ def simulate(carfile, track, inst):
 
     print("GOT TO: " + str(distance))
 
-simulate("data/sample_car.csv", "data/track_1.csv", "data/sample_instructions.csv")
+# simulate("data/sample_car.csv", "data/track_1.csv", "data/sample_instructions.csv")
